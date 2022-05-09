@@ -9,7 +9,7 @@ import UIKit
 
 class ProjectViewController: UITableViewController {
     
-    let cellIdentifier = "PrItem"
+    let cellIdentifier = "PrItems"
     var dataModel: DataModel!
     
     override func viewDidLoad() {

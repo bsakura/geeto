@@ -47,6 +47,7 @@
                     </tableView>
                     <navigationItem key="navigationItem" title="[PR Number]" largeTitleDisplayMode="never" id="zdU-vc-sQg">
                         <barButtonItem key="rightBarButtonItem" title="AddPR" image="plus" catalog="system" id="nkN-Sa-HEc">
+                            <color key="tintColor" name="AccentColor"/>
                             <connections>
                                 <segue destination="6mW-j4-hG9" kind="show" identifier="AddPR" id="oKb-nu-byX"/>
                             </connections>
@@ -68,15 +69,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <button key="tableFooterView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="6Kz-CP-rjQ">
-                            <rect key="frame" x="0.0" y="304" width="414" height="44"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <state key="normal" title="Button"/>
-                            <buttonConfiguration key="configuration" style="filled" title="Save"/>
-                            <connections>
-                                <action selector="save:" destination="6mW-j4-hG9" eventType="touchUpInside" id="I3B-6X-Y24"/>
-                            </connections>
-                        </button>
                         <sections>
                             <tableViewSection id="ouU-EH-VIj">
                                 <cells>
@@ -144,6 +136,7 @@
                                                 <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="N7i-L7-lh7">
                                                     <rect key="frame" x="322" y="6" width="49" height="31"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="onTintColor" name="AccentColor"/>
                                                     <connections>
                                                         <action selector="setReminderToggled" destination="6mW-j4-hG9" eventType="valueChanged" id="sbv-hf-FvC"/>
                                                     </connections>
@@ -169,6 +162,7 @@
                     </tableView>
                     <navigationItem key="navigationItem" title="New PR" id="qaX-PP-fgL">
                         <barButtonItem key="rightBarButtonItem" title="Done" id="SsV-99-2jH">
+                            <color key="tintColor" name="AccentColor"/>
                             <connections>
                                 <action selector="done" destination="6mW-j4-hG9" id="HmO-dj-VPc"/>
                             </connections>
@@ -177,7 +171,6 @@
                     <connections>
                         <outlet property="datePicker" destination="x1u-dA-vIU" id="Rmg-SV-ifv"/>
                         <outlet property="doneBarButton" destination="SsV-99-2jH" id="ekx-kv-Dgh"/>
-                        <outlet property="saveButton" destination="6Kz-CP-rjQ" id="y0z-VG-MhA"/>
                         <outlet property="setReminderToggle" destination="N7i-L7-lh7" id="APX-NC-cCf"/>
                         <outlet property="textField" destination="OKG-gF-ekm" id="ARi-xl-3id"/>
                     </connections>
@@ -201,7 +194,7 @@
                     </tableView>
                     <navigationItem key="navigationItem" title="Project" largeTitleDisplayMode="always" id="lhe-g1-F5C">
                         <barButtonItem key="rightBarButtonItem" title="Add" image="plus" catalog="system" id="yUd-L6-Uvc">
-                            <color key="tintColor" systemColor="linkColor"/>
+                            <color key="tintColor" name="AccentColor"/>
                             <connections>
                                 <segue destination="RMx-wA-gjU" kind="show" identifier="EditProject" id="AO3-ew-UyX"/>
                             </connections>
@@ -264,6 +257,7 @@
                     </tableView>
                     <navigationItem key="navigationItem" title="New Project" largeTitleDisplayMode="never" id="xQB-Uc-nEO">
                         <barButtonItem key="rightBarButtonItem" title="Done" image="checkmark" catalog="system" id="l35-xf-pVL" userLabel="Done Bar Button">
+                            <color key="tintColor" name="AccentColor"/>
                             <connections>
                                 <action selector="done" destination="RMx-wA-gjU" id="HS3-RG-QWG"/>
                             </connections>
@@ -288,6 +282,7 @@
                         <rect key="frame" x="0.0" y="44" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="tintColor" name="AccentColor"/>
+                        <color key="barTintColor" name="AccentColor"/>
                         <textAttributes key="titleTextAttributes">
                             <color key="textColor" systemColor="labelColor"/>
                         </textAttributes>
@@ -318,9 +313,6 @@
         </namedColor>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="linkColor">
-            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
